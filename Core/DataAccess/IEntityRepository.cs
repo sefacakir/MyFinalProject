@@ -1,10 +1,13 @@
-﻿using Entities.Abstract;
+﻿using Core.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+//Core katmanı diğer katmanları referans almaz.
+//Eğer alırsa diğer katmanlara bağımlı hale geliyor
 
-namespace DataAccess.Abstract
+
+namespace Core.DataAccess
 {
     //generic constraint - kısıtlama
     //class : referans tip olabilir.
@@ -14,7 +17,7 @@ namespace DataAccess.Abstract
 
     public interface IEntityRepository<T> where T:class,IEntity,new()
     {
-        //filter = null, filtre vermeyebiliriz.
+        //filter = null, filtre vermeyebiliriz. 
         List<T> GetAll(Expression<Func<T,bool>>filter = null);
         T Get(Expression<Func<T, bool>> filter = null);
         void Add(T entity);

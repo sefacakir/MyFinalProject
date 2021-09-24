@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,10 +15,12 @@ namespace DataAccess.Abstract
      *  DataAccess-Add-Project Reference ve ordan Entities'i seçiyoruz.
      *  Seçtiğimizi de DataAccess içerisndeki Dependencies'ten görebiliriz.
      *  
-     */
+     */ 
 
     public interface IProductDal:IEntityRepository<Product>
     {
 
     }
 }
+
+//Code refactoring : Kodun iyileştirilmesi
