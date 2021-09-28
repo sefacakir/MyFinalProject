@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 //Core katmanı diğer katmanları referans almaz.
 //Eğer alırsa diğer katmanlara bağımlı hale geliyor
-
+//Core katmanı evrensel bir katmandır.
 
 namespace Core.DataAccess
 {
