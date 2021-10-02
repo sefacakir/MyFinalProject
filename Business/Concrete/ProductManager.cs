@@ -37,7 +37,7 @@ namespace Business.Concrete
             //Ürünlere erişmeye yetkisi var.
             //artık verilere erişecek.
 
-            if(DateTime.Now.Hour == 22)
+            if(DateTime.Now.Hour == 1)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
