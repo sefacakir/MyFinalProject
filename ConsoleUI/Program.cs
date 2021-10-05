@@ -15,8 +15,8 @@ namespace ConsoleUI
          */
         static void Main(string[] args)
         {
-            ProductTest();
-            //CategoryTest();
+            //ProductTest();
+            CategoryTest();
 
            /*ProductManager productManager = new ProductManager(new EfProductDal());
             foreach (var product in productManager.GetProductDetails())
