@@ -28,6 +28,7 @@ namespace Business.Concrete
 
         }
 
+        //[SecuredOperation("product.add")]
         [ValidationAspect(typeof(ProductValidator))]
         //ProductValidator'ı kullanarak Add metodunu doğrula
         public IResult Add(Product product)
