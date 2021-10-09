@@ -9,7 +9,7 @@ using System.Text;
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCategoryDal : EfEntityRepositoryBase<Category, NorthwindContext>, ICategoryDal
-    {
+    { 
         /*
          * Entity Framework microsoftun bir ürünü,
          * Linq destekli çalışıyor
